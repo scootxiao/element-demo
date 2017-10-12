@@ -30,9 +30,7 @@
     <i class="el-icon-edit"></i>
     <i class="el-icon-share"></i>
     <i class="el-icon-delete"></i>
-    <el-button type="primary" icon="search">搜索3</el-button>
-    <el-button type="primary" icon="search">搜索1</el-button>
-    <el-button type="primary" icon="search">搜索2</el-button>
+    <el-button type="primary" icon="search">搜索</el-button>
 
     <div class="block">
       <el-button type="success">成功按钮</el-button>
@@ -245,78 +243,6 @@
       </el-row>
     </div>
 
-    <div class="block">
-      <el-select v-model="value" placeholder="请选择">
-        <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value">
-        </el-option>
-      </el-select>
-    </div>
-
-    <div class="block">
-      <el-select v-model="value2" placeholder="请选择">
-        <el-option
-          v-for="item in options2"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
-          :disabled="item.disabled">
-        </el-option>
-      </el-select>
-    </div>
-
-    <div class="block">
-       <el-select v-model="value3" disabled placeholder="请选择">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value">
-          </el-option>
-        </el-select>
-    </div>
-
-    <div class="block"> 
-       <el-select v-model="value4" clearable placeholder="请选择">
-        <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value">
-        </el-option>
-      </el-select>
-    </div>
-
-    <div class="block">
-      <el-select v-model="value5" multiple placeholder="请选择">
-        <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value">
-        </el-option>
-      </el-select>
-    </div>
-
-    <div class="block">
-      <el-select v-model="value7" placeholder="请选择">
-        <el-option-group
-          v-for="group in options3"
-          :key="group.label"
-          :label="group.label">
-          <el-option
-            v-for="item in group.options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value">
-          </el-option>
-        </el-option-group>
-      </el-select>
-    </div>
-
   </div>
 </template>
 
@@ -354,71 +280,7 @@
         input9: '',
         restaurants: [],
         state1: '',
-        state2: '',
-        options: [{
-          value: '选项1',
-          label: '黄金糕'
-        }, {
-          value: '选项2',
-          label: '双皮奶'
-        }, {
-          value: '选项3',
-          label: '蚵仔煎'
-        }, {
-          value: '选项4',
-          label: '龙须面'
-        }, {
-          value: '选项5',
-          label: '北京烤鸭'
-        }],
-        value: '',
-        options2: [{
-          value: '选项1',
-          label: '黄金糕'
-        }, {
-          value: '选项2',
-          label: '双皮奶',
-          disabled: true
-        }, {
-          value: '选项3',
-          label: '蚵仔煎'
-        }, {
-          value: '选项4',
-          label: '龙须面'
-        }, {
-          value: '选项5',
-          label: '北京烤鸭'
-        }],
-        value2: '',
-        value3: '',
-        value4: '',
-        value5: [],
-        options3: [{
-          label: '热门城市',
-          options: [{
-            value: 'Shanghai',
-            label: '上海'
-          }, {
-            value: 'Beijing',
-            label: '北京'
-          }]
-        }, {
-          label: '城市名',
-          options: [{
-            value: 'Chengdu',
-            label: '成都'
-          }, {
-            value: 'Shenzhen',
-            label: '深圳'
-          }, {
-            value: 'Guangzhou',
-            label: '广州'
-          }, {
-            value: 'Dalian',
-            label: '大连'
-          }]
-        }],
-        value7: ''
+        state2: ''
       };
     },
     methods: {
@@ -489,7 +351,7 @@
           { "value": "四海游龙（天山西路店）", "address": "上海市长宁区天山西路" },
           { "value": "樱花食堂（凌空店）", "address": "上海市长宁区金钟路968号15楼15-105室" },
           { "value": "壹分米客家传统调制米粉(天山店)", "address": "天山西路428号" },
-          { "value": "福荣祥烧腊（平溪路店）", "address": "上海市长宁区协和路福泉路255弄57-73号" },
+          { "value": "福荣祥烧import App from './App'腊（平溪路店）", "address": "上海市长宁区协和路福泉路255弄57-73号" },
           { "value": "速记黄焖鸡米饭", "address": "上海市长宁区北新泾街道金钟路180号1层01号摊位" },
           { "value": "红辣椒麻辣烫", "address": "上海市长宁区天山西路492号" },
           { "value": "(小杨生煎)西郊百联餐厅", "address": "长宁区仙霞西路88号百联2楼" },
