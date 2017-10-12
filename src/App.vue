@@ -30,7 +30,7 @@
     <i class="el-icon-edit"></i>
     <i class="el-icon-share"></i>
     <i class="el-icon-delete"></i>
-    <el-button type="primary" icon="search">搜索</el-button>
+    <el-button type="primary" icon="search">搜索1</el-button>
 
     <div class="block">
       <el-button type="success">成功按钮</el-button>
